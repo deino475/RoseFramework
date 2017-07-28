@@ -1,0 +1,441 @@
+/**    
+The Rose Framework
+Developed By Nile Dixon
+Start Date - July 27th, 2017
+**/
+
+/**
+Classes to modify text color.
+**/
+.white-text { color: #ffffff; }
+.snow-text { color: #fffafa; } 
+.honeydew-text { color: #f0fff0; }
+.mint-cream-text { color: #f5fffa; }
+.azure-text { color: #f0ffff; }
+.alice-blue-text { color: #f0f8ff; }
+.ghost-white-text { color: #f8ffff; }
+.white-smoke-text { color: #f5f5f5; }
+.seashell-text { color: #fff5ee; }
+.beige-text { color: #f5f5dc; }
+.old-lace-text { color: #fdf5e6; }
+.floral-white-text { color: #fffaf0; }
+.ivory-text { color: #fffff0; }
+.antique-white-text { color: #faebd7; }
+.linen-text { color: #faf0e6; }
+.lavendar-blush-text { color: #fff0f5; }
+.misty-rose-text { color: #ffe4e1; }
+.gainsboro-text { color: #dcdcdc; }
+.light-gray-text { color: #d3d3d3; }
+.silver-text { color: #c0c0c0; }
+.dark-gray-text { color: #a9a9a9; }
+.gray-text { color: #808080; }
+.dim-gray-text { color: #a9a9a9; }
+.light-slate-gray-text { color: #778899; }
+.slate-gray-text { color: #708090; }
+.dark-slate-gray-text { color: #2f4f4f; }
+.black-text { color: #000000; }
+.pink-text { color: #ffc0cb; }
+.light-pink-text { color: #ffb6c1; }
+.hot-pink-text { color: #ff69b4; }
+.deep-pink-text { color: #ff1493; }
+.pale-violet-red-text { color: #db7093; }
+.medium-violet-red-text { color: #c71585; }
+.light-salmon-text { color: #fa8072; }
+.dark-salmon-text { color: #e9967a; }
+.light-coral-text { color: #f08080; }
+.crimson-text { color: #dc143c; }
+.fire-brick-text { color: #b22222; }
+.dark-red-text { color: #8b0000; }
+.red-text { color: #ff0000; }
+.orange-red-text { color: #ff4500; }
+.tomato-text { color: #ff6347; }
+.coral-text { color: #ff7f50; }
+.dark-orange-text { color: #ff8c00; }
+.orange-text { color: #ffa500; }
+.yellow-text { color: #ffff00; }
+.light-yellow { color: #ffffe0; }
+.lemon-chiffon-text { color: #fffacd; }
+.light-goldenrod-text {	color: #fafad2; }
+.papaya-text { color: #ffefd5; }
+.moccasin-text { color: #ffe4b5; }
+.peach-text { color: #ffdab9; }
+.pale-goldenrod-text { color: #eee8aa; }
+.khaki-text { color: #f0e68c; }
+.dark-khaki-text { color: #bdb76b; }
+.gold-text { color: #ffd700; }
+.corn-silk-text { color: #fff8dc; }
+.almond-text { color: #ffebcd; }
+.bisque-text { color: #ffe4c4; }
+.wheat-text { color: #f5deb3; }
+.burly-wood-text { color: #deb887; }
+.tan-text { color: #d2b48c; }
+.rosy-brown-text { color: #bc8f8f; }
+.sandy-brown-text { color: #f4a460; }
+.goldenrod-text { color: #daa520; }
+.dark-goldenrod-text { color: #b8860b; }
+.peru-text { color: #cd853f; }
+.chocolate-text { color: #d2691e; }
+.saddle-brown-text { color: #8b4513; }
+.sienna-text { color: #a0522d; }
+.brown-text { color: #a52a2a; }
+.maroon-text { color: #800000; }
+.dark-olive-green-text { color: #556b2f; }
+.olive-text { color: #808000; }
+.olive-drab-text { color: #6b8e23; }
+.yellow-green-text { color: #9acd32; }
+.lime-green-text { color: #32cd32; }
+.lime-text { color: #00ff00; }
+.lawn-green-text { color: #7cfc00; }
+.chartreuse-text { color: #7fff00; }
+.green-yellow-text { color: #adff2f; }
+.spring-green-text { color: #00ff7f; }
+.medium-spring-green-text { color: #00fa9a; }
+.light-green-text { color: #90ee90; }
+.pale-green-text { color: #98fb98; }
+.dark-sea-green-text { color: #8fbc8f; }
+.medium-aquamarine-text { color: #66cdaa; }
+.medium-sea-green-text { color: #3cb371; }
+.sea-green-text { color: #2e8b57; }
+.forest-green-text { color: #22ab22; }
+.green-text { color: #008000; }
+.dark-green-text { color: #006400; }
+.cyan-text { color: #00ffff; }
+.light-cyan-text { color: #e0ffff; }
+.pale-turquoise-text { color: #afeeee; }
+.aquamarine-text { color: #7fffd4; }
+.turquoise-text { color: #40e0d0; }
+.medium-turquoise-text { color: #48d1cc; }
+.dark-turquoise-text { color: #00ced1; }
+.light-sea-green-text { color: #20b2aa; }
+.cadet-blue-text { color: #5f9ea0; }
+.dark-cyan-text { color: #008b8b; }
+.teal-text { color: #008080; }
+.light-steel-blue-text { color: #b0c4de; }
+.powder-blue-text { color: #b0e0e6; }
+.light-blue-text { color: #add8e6; }
+.sky-blue-text { color: #87ceeb; }
+.light-sky-blue-text { color: #87cefa; }
+.deep-sky-blue-text { color: #00bfff; }
+.dodger-blue-text { color: #1e90ff; }
+.cornflower-blue-text { color: #6495ed; }
+.steel-blue-text { color: #4682b4; }
+.royal-blue-text { color: #4169e1; }
+.blue-text { color: #0000ff; }
+.medium-blue-text { color: #0000cd; }
+.dark-blue-text { color: #00008b; }
+.navy-text { color: #000080; }
+.midnight-blue-text { color: #191970; }
+.lavendar-text { color: #e6e6fa; }
+.thistle-text { color: #d8bfd8; }
+.plum-text { color: #dda0dd; }
+.violet-text { color: #ee82ee; }
+.orchid-text { color: #da70d6; }
+.fuchsia-text { color: #ff00ff; }
+.medium-orchid-text { color: #ba55d3; }
+.medium-purple-text { color: #9370db; }
+.blue-violet-text { color: #8a2be2; }
+.dark-violet-text { color: #9400d3; }
+.dark-orchid-text { color: #9932cc; }
+.dark-magenta-text { color: #8b008b; }
+.purple-text { color: #800080; }
+.indigo-text { color: #4b0082; }
+.dark-slate-blue-text { color: #483d8b; }
+.slate-blue-text { color: #6a5acd; }
+.medium-slate-blue-text { color: #7b68ee; }
+
+/**
+Classes to modify background color.
+**/
+
+.white { background-color: #ffffff; }
+.snow { background-color: #fffafa; } 
+.honeydew { background-color: #f0fff0; }
+.mint-cream { background-color: #f5fffa; }
+.azure { background-color: #f0ffff; }
+.alice-blue { background-color: #f0f8ff; }
+.ghost-white { background-color: #f8ffff; }
+.white-smoke { background-color: #f5f5f5; }
+.seashell { background-color: #fff5ee; }
+.beige { background-color: #f5f5dc; }
+.old-lace { background-color: #fdf5e6; }
+.floral-white { background-color: #fffaf0; }
+.ivory { background-color: #fffff0; }
+.antique-white { background-color: #faebd7; }
+.linen { background-color: #faf0e6; }
+.lavendar-blush { background-color: #fff0f5; }
+.misty-rose { background-color: #ffe4e1; }
+.gainsboro { background-color: #dcdcdc; }
+.light-gray { background-color: #d3d3d3; }
+.silver { background-color: #c0c0c0; }
+.dark-gray { background-color: #a9a9a9; }
+.gray { background-color: #808080; }
+.dim-gray { background-color: #a9a9a9; }
+.light-slate-gray { background-color: #778899; }
+.slate-gray { background-color: #708090; }
+.dark-slate-gray { background-color: #2f4f4f; }
+.black { background-color: #000000; }
+.pink { background-color: #ffc0cb; }
+.light-pink { background-color: #ffb6c1; }
+.hot-pink { background-color: #ff69b4; }
+.deep-pink { background-color: #ff1493; }
+.pale-violet-red { background-color: #db7093; }
+.medium-violet-red { background-color: #c71585; }
+.light-salmon { background-color: #fa8072; }
+.dark-salmon { background-color: #e9967a; }
+.light-coral { background-color: #f08080; }
+.crimson { background-color: #dc143c; }
+.fire-brick { background-color: #b22222; }
+.dark-red { background-color: #8b0000; }
+.red { background-color: #ff0000; }
+.orange-red { background-color: #ff4500; }
+.tomato { background-color: #ff6347; }
+.coral { background-color: #ff7f50; }
+.dark-orange { background-color: #ff8c00; }
+.orange { background-color: #ffa500; }
+.yellow { background-color: #ffff00; }
+.light-yellow { background-color: #ffffe0; }
+.lemon-chiffon { background-color: #fffacd; }
+.light-goldenrod {	background-color: #fafad2; }
+.papaya { background-color: #ffefd5; }
+.moccasin { background-color: #ffe4b5; }
+.peach { background-color: #ffdab9; }
+.pale-goldenrod { background-color: #eee8aa; }
+.khaki { background-color: #f0e68c; }
+.dark-khaki { background-color: #bdb76b; }
+.gold { background-color: #ffd700; }
+.corn-silk { background-color: #fff8dc; }
+.almond { background-color: #ffebcd; }
+.bisque { background-color: #ffe4c4; }
+.wheat { background-color: #f5deb3; }
+.burly-wood { background-color: #deb887; }
+.tan { background-color: #d2b48c; }
+.rosy-brown { background-color: #bc8f8f; }
+.sandy-brown { background-color: #f4a460; }
+.goldenrod { background-color: #daa520; }
+.dark-goldenrod { background-color: #b8860b; }
+.peru { background-color: #cd853f; }
+.chocolate { background-color: #d2691e; }
+.saddle-brown { background-color: #8b4513; }
+.sienna { background-color: #a0522d; }
+.brown { background-color: #a52a2a; }
+.maroon { background-color: #800000; }
+.dark-olive-green { background-color: #556b2f; }
+.olive { background-color: #808000; }
+.olive-drab { background-color: #6b8e23; }
+.yellow-green { background-color: #9acd32; }
+.lime-green { background-color: #32cd32; }
+.lime { background-color: #00ff00; }
+.lawn-green { background-color: #7cfc00; }
+.chartreuse { background-color: #7fff00; }
+.green-yellow { background-color: #adff2f; }
+.spring-green { background-color: #00ff7f; }
+.medium-spring-green { background-color: #00fa9a; }
+.light-green { background-color: #90ee90; }
+.pale-green { background-color: #98fb98; }
+.dark-sea-green { background-color: #8fbc8f; }
+.medium-aquamarine { background-color: #66cdaa; }
+.medium-sea-green { background-color: #3cb371; }
+.sea-green { background-color: #2e8b57; }
+.forest-green { background-color: #22ab22; }
+.green { background-color: #008000; }
+.dark-green { background-color: #006400; }
+.cyan { background-color: #00ffff; }
+.light-cyan { background-color: #e0ffff; }
+.pale-turquoise { background-color: #afeeee; }
+.aquamarine { background-color: #7fffd4; }
+.turquoise { background-color: #40e0d0; }
+.medium-turquoise { background-color: #48d1cc; }
+.dark-turquoise { background-color: #00ced1; }
+.light-sea-green { background-color: #20b2aa; }
+.cadet-blue { background-color: #5f9ea0; }
+.dark-cyan { background-color: #008b8b; }
+.teal { background-color: #008080; }
+.light-steel-blue { background-color: #b0c4de; }
+.powder-blue { background-color: #b0e0e6; }
+.light-blue { background-color: #add8e6; }
+.sky-blue { background-color: #87ceeb; }
+.light-sky-blue { background-color: #87cefa; }
+.deep-sky-blue { background-color: #00bfff; }
+.dodger-blue { background-color: #1e90ff; }
+.cornflower-blue { background-color: #6495ed; }
+.steel-blue { background-color: #4682b4; }
+.royal-blue { background-color: #4169e1; }
+.blue { background-color: #0000ff; }
+.medium-blue { background-color: #0000cd; }
+.dark-blue { background-color: #00008b; }
+.navy { background-color: #000080; }
+.midnight-blue { background-color: #191970; }
+.lavendar { background-color: #e6e6fa; }
+.thistle { background-color: #d8bfd8; }
+.plum { background-color: #dda0dd; }
+.violet { background-color: #ee82ee; }
+.orchid { background-color: #da70d6; }
+.fuchsia { background-color: #ff00ff; }
+.medium-orchid { background-color: #ba55d3; }
+.medium-purple { background-color: #9370db; }
+.blue-violet { background-color: #8a2be2; }
+.dark-violet { background-color: #9400d3; }
+.dark-orchid { background-color: #9932cc; }
+.dark-magenta { background-color: #8b008b; }
+.purple { background-color: #800080; }
+.indigo { background-color: #4b0082; }
+.dark-slate-blue { background-color: #483d8b; }
+.slate-blue { background-color: #6a5acd; }
+.medium-slate-blue { background-color: #7b68ee; }
+
+/** 
+Grid System
+**/
+.container {
+	width: 100%;
+	max-width: 960px;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/** Twelve Column Grid System **/
+.col,
+.one-col { width: 8.33%; }
+.two-col { width: 16.66%; }
+.three-col { width: 25%; }
+.four-col { width: 33.33%; }
+.five-col { width: 41.66%; }
+.six-col { width: 50%; }
+.seven-col { width: 58.33%; }
+.eight-col { width: 66.66%; }
+.nine-col { width: 75%; }
+.ten-col { width: 83.33%; }
+.eleven-col { width: 91.66%; }
+.twelve-col { width: 100%; }
+
+.col,
+.one-col,
+.two-col,
+.three-col,
+.four-col,
+.five-col,
+.six-col,
+.seven-col,
+.eight-col,
+.nine-col,
+.ten-col,
+.eleven-col,
+.twelve-col { 
+	float: left;
+	min-heigh: 1px;
+}
+
+.off-one { margin-left: 8.33%; }
+.off-two { margin-left: 16.66%; }
+.off-three { margin-left: 25%; }
+.off-four { margin-left: 33.33%; }
+.off-five { margin-left: 41.66%; }
+.off-six { margin-left: 50%; }
+.off-seven { margin-left: 58.33%; }
+.off-eight { margin-left: 66.66%; }
+.off-nine { margin-left: 75%; }
+.off-ten { margin-left: 83.33%; }
+.off-eleven { margin-left: 91.66%; }
+
+@media (max-width: 800px){
+	.col,
+	.one-col { width: 33% !important; }
+	.two-col { width: 50% !important; }
+	.three-col { width: 66.66% !important; }
+	.four-col { width: 100% !important; }
+	.five-col { width: 100% !important; }
+	.six-col { width: 100% !important; }
+	.seven-col { width: 100% !important; }
+	.eight-col { width: 100% !important; }
+	.nine-col { width: 100% !important; }
+	.ten-col { width: 100% !important; }
+	.eleven-col { width: 100% !important; }
+	.twelve-col { width: 100% !important; }
+}
+
+/** Ten Column Grid System **/
+.one-tenth { width: 10%; }
+.two-tenth { width: 20%; }
+.three-tenth { width: 30%; }
+.four-tenth { width: 40%; }
+.five-tenth { width: 50%; }
+.six-tenth { width: 60%; }
+.seven-tenth { width: 70%; }
+.eight-tenth { width: 80%; }
+.nine-tenth { width: 90%; }
+.ten-tenth { width: 100%; }
+
+.one-tenth,
+.two-tenth,
+.three-tenth,
+.four-tenth,
+.five-tenth,
+.six-tenth,
+.seven-tenth,
+.eight-tenth,
+.nine-tenth,
+.ten-tenth {
+	float: left;
+	min-height: 1px;
+}
+
+.off-one-tenth { margin-left: 10%; }
+.off-two-tenth { margin-left: 20%; }
+.off-three-tenth { margin-left: 30%; }
+.off-four-tenth { margin-left: 40%; }
+.off-five-tenth { margin-left: 50%; }
+.off-six-tenth { margin-left: 60%; }
+.off-seven-tenth { margin-left: 70%; }
+.off-eight-tenth { margin-left: 80%; }
+.off-nine-tenth { margin-left: 90%; }
+
+@media (max-width: 800px) {
+	.one-tenth { width: 33% !important; }
+	.two-tenth { width: 50% !important; }
+	.three-tenth { width: 66.66% !important; }
+	.four-tenth { width: 100% !important; }
+	.five-tenth { width: 100% !important; }
+	.six-tenth { width: 100% !important; }
+	.seven-tenth { width: 100% !important; }
+	.eight-tenth { width: 100% !important; }
+	.nine-tenth { width: 100% !important; }
+	.ten-tenth { width: 100% !important; }
+}
+
+/**
+Typography 
+**/
+
+.left-align { text-align: left; }
+.right-align { text-align: right; }
+.center-align { text-align: center; }
+.cut { text-overflow: clip; }
+.trunc { text-overflow: ellipsis; }
+
+/**
+Components
+**/
+
+.collection > .collection-item {
+	float: left;
+	width: 80%;
+	margin-left: 10%;
+	min-height: 40px;
+	border: 1px solid #eeeeee;
+}
+
+.card {
+	width: 100%;
+	min-height: 10px;
+	border: 1px solid #eeeeee;
+	border-radius: 5px;
+}
+
+
+
+
+
