@@ -288,7 +288,8 @@ Grid System
 **/
 .container {
 	width: 100%;
-	max-width: 960px;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .row::after {
@@ -436,6 +437,15 @@ Components
 }
 
 
+/** 
+Centering Code
+**/
 
+.centered {
+	position: relative;
+	top: 50%;
+	width: 50%;
+	margin: 0 auto;
+}
 
 
